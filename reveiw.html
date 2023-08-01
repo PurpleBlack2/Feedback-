@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Feedback </title>
+        <link rel="icon" href="icon.jpg.png" type="image/x-icon">
+        <style>
+            body{
+                background-color: whitesmoke;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+           h1{
+            color: green;
+           }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="logo.png" alt="logo" title="GeeksforGeeks logo" width="151" height="80" >
+            <h1>Feedback for GeeksforGeeks</h1>
+        </header>
+        <p>
+            We're on a mission to provide the best possible service and your feedback is an integral part of that journey. We value your input and understand that it is through your candid thoghts that we can better understand your needs and expectations. Whether it's praise, suggestions or areas where we can do better, your insigts will be carefully considered and used to make positive changes. Thank you for being an essential part of our community and helping us improve. We're excited to hear what to say!
+        </p>
+      <main>
+         <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <p><label for="name">Name:</label>
+                 <input type="text" name="name" id="name" placeholder="Hope Jolly" autocomplete="on" required>
+                </p>
+                <p><label for="email">Email:</label>
+                 <input type="text" name="email" id="email" placeholder="HopeJolly12@gmail.com" autocomplete="on" required>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Rate us with 1 being POOR and 5 being the BEST
+                </legend>
+              <p>
+                <input type="radio" name="rating" id="1" value="1">
+                <label for="1">1</label>
+              </p>
+              <p>
+                <input type="radio" name="rating" id="2" value="2">
+                <label for="2">2</label>
+              </p>
+              <p>
+                <input type="radio" name="rating" id="3" value="3">
+                <label for="3">3</label>
+              </p>
+              <p>
+                <input type="radio" name="rating" id="4" value="4">
+                <label for="4">4</label>
+              </p>
+              <p>
+                <input type="radio" name="rating" id="5" value="5">
+                <label for="5">5</label>
+              </p>
+            </fieldset>
+            <fieldset>
+              <legend>Comments</legend>
+              <label for="comments">Leave a comment.</label>
+              <br>
+              <textarea name="comments" id="comments" cols="80" rows="20" placeholder="We want to hear your thoughts"></textarea>
+            </fieldset>
+            <button type="submit">Submit</button>
+         </form>
+      </main>
+    </body>
+</html>
